@@ -6,11 +6,11 @@
 
        @foreach ($plans as $plan)
         <article>
-            <h2>TITOLO VIAGGIO: {{ $plan->title }}</h2>
+            <h2>{{ $plan->title }}</h2>
             <p>{{ $plan->description }}</p>
             <p>GIORNI: {{ $plan->days }}</p>
-            <p>PREZZO: {{ $plan->price }}</p>
-            <p>VOTI: {{ $plan->energy_rating }}</p>
+            <p>PREZZO: {{ $plan->price }} €</p>
+            <p>VOTO: {{ $plan->energy_rating }}</p>
         </article>
         @endforeach
     </div>
